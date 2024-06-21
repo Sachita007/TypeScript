@@ -10,6 +10,7 @@ import Rapper from './components/Rapper'
 import Button from './components/Button'
 import Input from './components/Input'
 import Container from './components/Container'
+import Counter from './components/Counter'
 
 function App() {
 
@@ -52,8 +53,12 @@ function App() {
       <Button handleClick={(id, event) => { console.log("Button Clicked", event, id) }}></Button>
       <Input value='' handleChange={(event) => { console.log(event.target.value) }} /> */}
 
-      This section for passing css as props
-      <Container style={{ backgroundColor: "red", width: "10rem", height: "10rem", borderRadius: "10px" }} />
+      {/* This section for passing css as props
+      <Container style={{ backgroundColor: "red", width: "10rem", height: "10rem", borderRadius: "10px" }} /> */}
+
+      This section is for understanding types in useReducer Hook
+      <Counter />
+
 
     </>
   )
